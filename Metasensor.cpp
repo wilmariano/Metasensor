@@ -112,7 +112,7 @@ int Metasensor::getSensor_Umidade_Capacitivo(int a, int b) {
   //Declaracao da variavel que armazena as leituras do sensor
   int leitura_sensor = 0;
   //Declaracao da variavel que armazena a quantidade de amostras que serao coletadas
-  const int NUMERO_AMOSTRAS = 100; 
+  const int NUMERO_AMOSTRAS = 60; 
   //Altere a variavel acima com a quantidade de amostras que deseja coletar para o calculo da media
   //Declaracao da variavel que armazena a soma das leituras
   long somatoria = 0;
@@ -128,11 +128,10 @@ int Metasensor::getSensor_Umidade_Capacitivo(int a, int b) {
     Serial.print("  |  ");
     Serial.print("Tensao: ");
     Serial.println(tensao);
-    delay(1000);
+    delay(500);
   }
   //Calcula a media das leituras utilizando a variavel "somatoria" e a variavel "NUMERO_AMOSTRAS"
   int media = somatoria / NUMERO_AMOSTRAS;
-
   int leitura_sensor_final = map(media, b, a, 100, 0);
   if(leitura_sensor_final>100){
     leitura_sensor_final = 100;
