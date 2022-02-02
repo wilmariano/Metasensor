@@ -109,3 +109,5 @@ Então o que tem que ser feito é cálcular mais pontos, mas cuidado, se tiver u
 * Contributions are welcome! Please read our guide before contributing to help this project | As contribuições são bem-vindas! Por favor, leia nosso guia antes de contribuir para ajudar este projeto.
 ### Referências
 * Todos os scripts rodando por trás da leitura do sensor de umidade do solo capacitivo tiveram como referência a matéria de Giovanni de Castro, clique <a href="https://www.robocore.net/tutoriais/leitura-umidade-solo"> AQUI </a> para acessar a matéria.
+* Já quanto as informações sobre calibrar utilizando matemática e diferença de calibrar e ajustar, clique <a href="http://energetica.ind.br/wp-content/uploads/2016/01/calibracoes-ajustes-rev-00.pdf"> AQUI </a> OU/E clique <a href="https://dimave.com.br/calibracao-e-ajuste/"> AQUI </a>
+* 
