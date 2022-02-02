@@ -79,7 +79,7 @@ Assim vemos que não temos problemas, já que no sensor ideal o offet será igua
 
 Diferença entre Calibração e ajuste: Segundo Dimave (2020), o ajuste é uma etapa da manutenção corretiva. Enquanto isso, a calibração faz parte da prevenção, evitando, assim, tempos de parada desnecessários.  
 
-Tipos de calibracoes  
+### Tipos de calibracoes  
 Calibração de ponto único: Supondo que queiramos o valor de X (da fórmula), isso será feito verificando o offset, desta forma, quando o Y=0.  
 Não se esqueça que neste contexto estamos esperando linearidade por parte do sensor e a inclinação da reta, assim como esta acima.  
 Exemplo: Ao calibrar um sensor ultrassônico que mede 10,3cm e 0,3cm de variação se consegue medir a distância do objeto cobaia com um paquímetro e configurar este 0,3cm de variação como offset (levando em conta que o interesante é um valor muito próximo do 10cm).  
@@ -87,16 +87,16 @@ Exemplo: Ao calibrar um sensor ultrassônico que mede 10,3cm e 0,3cm de variaç�
 Calibracao de dois pontos: este por sua vez trata não apenas do offset, mas inclinação da reta, ou seja, a variável multiplicadora da fórmula.  
 Em gráfico pode-se ter varias inclinações da reta, além do offset negativo, positivo e zerado.  
 Dessa maneira, o sensor pode ter dois ajustes, um para zero (offset) e o outro para inclinação reta (multiplicador).  
-#### ATENÇÃO: Ao ajustar um parametro, o outro podera ficar desajustado, então é interessante intercalar e ir ajustando ambos até que se encontre consenso entre ambos ajustes e o que se deseja.  
+### ATENÇÃO: Ao ajustar um parametro, o outro podera ficar desajustado, então é interessante intercalar e ir ajustando ambos até que se encontre consenso entre ambos ajustes e o que se deseja.  
 
 1.Faça duas medições com o sensor próprio, sendo uma com valor bruto baixo (mínimo da faixa) e valor bruto alto (máximo da faixa).  
 2.Faça o mesmo com um outro sensor padrão, mas chame de valor de referência baixo e alto.  
 3.Cálcule:  
-	* faixa bruta = valor alto bruto - valor baixo bruto  
-	* faixa de referência = referência alta - referência baixo  
+* faixa bruta = valor alto bruto - valor baixo bruto  
+* faixa de referência = referência alta - referência baixo  
 e então...  
-	* valor corrigido = valor bruto . faixa de ref/faixa bruta + ref baixa  
-	* valor bruto = valor medido do sensor  
+* valor corrigido = valor bruto . faixa de ref/faixa bruta + ref baixa  
+* valor bruto = valor medido do sensor  
 Como pôde ver, esta equação é a mesma da anterior, porém, melhorada.  
 
 Calibração multi ponto  
