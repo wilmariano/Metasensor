@@ -61,7 +61,7 @@ void loop() {
 -----------------------------------------------
 ### Outras soluções que para caso os métodos acima sejam muito rudimentar é apelar para matemática, vejamos:
 Visualize dados por meio de gráficos, utilize o calculo da reta, x = ay + b.
-x = valor desejado do sensor
+x = valor desejado do sensor  
 y = input
 a = coef. de inclinação de reta
 b = offset que corresponde ao valor de x quando y for igual a 0
@@ -102,6 +102,7 @@ Como pôde ver, esta equação é a mesma da anterior, porém, melhorada.
 Calibração multi ponto
 Tudo visto até o momento diz respeito aos sensores que possuem apenas retas, e não curvas.
 Então o que tem que ser feito é calcular mais pontos, mas cuiado, se tiver um comportamento muito distante da curva, estes calculos podem não ajudar.
+
 -----------------------------------------------
 
 ### Contributing | Contribuindo
